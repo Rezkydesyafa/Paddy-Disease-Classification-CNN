@@ -1,0 +1,247 @@
+/* ==========================================================================
+   Contact Page - Minimalist Horizon Style (Spacious & Clean Typography)
+   ========================================================================== */
+
+.contact-clean-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-clean-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 180px 8% 100px; /* Offset fixed header and add rich padding */
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-clean-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .contact-clean-layout {
+    grid-template-columns: 1fr 1.25fr;
+    gap: 6rem;
+    align-items: stretch;
+  }
+}
+
+/* 1. Left Column */
+.contact-clean-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+}
+
+@media (min-width: 992px) {
+  .contact-clean-left {
+    min-height: 480px;
+    padding-bottom: 20px;
+  }
+}
+
+.contact-clean-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #111111;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  line-height: 1.05;
+}
+
+@media (min-width: 1200px) {
+  .contact-clean-title {
+    font-size: 4.8rem;
+  }
+}
+
+.contact-clean-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #718096;
+  max-width: 360px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.contact-clean-socials {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 992px) {
+  .contact-clean-socials {
+    margin-top: 0;
+  }
+}
+
+.social-link {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111111;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.social-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.social-link:hover {
+  color: var(--primary-green);
+}
+
+.social-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: var(--primary-green);
+}
+
+/* 2. Right Column */
+.contact-clean-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-clean-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 576px) {
+  .contact-clean-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 2.5rem;
+  }
+}
+
+.contact-clean-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-clean-block.clickable {
+  cursor: pointer;
+}
+
+.block-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #a0aec0;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+}
+
+.block-value {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.address-value {
+  font-weight: 500;
+}
+
+/* Hover effect on clickable blocks */
+.contact-clean-block.clickable:hover .block-value,
+.contact-clean-block.link-block:hover .block-value {
+  color: var(--primary-green);
+}
+
+.copy-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.72rem;
+  background-color: var(--primary-green);
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  animation: feedbackFadeIn 0.25s ease-out;
+}
+
+@keyframes feedbackFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 3. Image Container */
+.contact-clean-image-container {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: #f7fafc;
+}
+
+@media (min-width: 992px) {
+  .contact-clean-image-container {
+    height: 280px;
+  }
+}
+
+.contact-clean-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.contact-clean-image-container:hover .contact-clean-image {
+  transform: scale(1.03);
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .contact-clean-main {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+  
+  .contact-clean-title {
+    font-size: 2.8rem;
+  }
+}
