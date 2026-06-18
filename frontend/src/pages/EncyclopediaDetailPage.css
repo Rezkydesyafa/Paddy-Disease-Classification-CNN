@@ -1,0 +1,399 @@
+/* ===================================
+   Encyclopedia Detail Page — Magazine Layout
+   =================================== */
+
+.magazine-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1a1a1a;
+}
+
+.magazine-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Back Link */
+.magazine-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  transition: color 0.3s;
+}
+
+.magazine-back:hover {
+  color: #111;
+}
+
+/* Header Section */
+.magazine-header {
+  margin-bottom: 2.5rem;
+}
+
+.magazine-category {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.magazine-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+  color: #111827;
+}
+
+.magazine-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.magazine-scientific {
+  color: #ea580c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #fed7aa;
+  text-underline-offset: 3px;
+}
+
+.magazine-risk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.magazine-risk-badge i {
+  font-size: 0.85rem;
+}
+
+.magazine-risk-badge.risk-high {
+  background-color: rgba(239, 68, 68, 0.06);
+  color: #e53e3e;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.magazine-risk-badge.risk-med {
+  background-color: rgba(245, 158, 11, 0.06);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.18);
+}
+
+.magazine-risk-badge.risk-low {
+  background-color: rgba(16, 185, 129, 0.06);
+  color: #0f9d58;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.magazine-lead {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+/* Featured Image */
+.magazine-featured-image {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  background: #f3f4f6;
+}
+
+.magazine-featured-image img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* === Article Body === */
+.magazine-body h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 3rem 0 1.2rem;
+  color: #111827;
+  scroll-margin-top: 120px;
+}
+
+/* Symptom List */
+.magazine-symptom-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.magazine-symptom-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #374151;
+}
+
+.magazine-symptom-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ea580c;
+}
+
+/* Info Cards (Penyebab, Penyebaran, etc.) */
+.magazine-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.magazine-info-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.magazine-info-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.magazine-info-card-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.magazine-info-card h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.35rem;
+}
+
+.magazine-info-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Quote */
+.magazine-quote {
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: #4b5563;
+  padding-left: 1.5rem;
+  border-left: 3px solid #d1d5db;
+  margin: 2.5rem 0;
+}
+
+.magazine-quote p {
+  margin: 0;
+}
+
+/* Action Lists */
+.magazine-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.magazine-list-item {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #4b5563;
+}
+
+.magazine-list-item strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* Chemical / Biological Control */
+.magazine-control-section {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.magazine-control-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.magazine-control-icon.chemical {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.magazine-control-icon.biological {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.magazine-control-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.magazine-control-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.magazine-control-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+/* Divider */
+.magazine-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 3rem 0;
+}
+
+/* Gallery */
+.magazine-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.magazine-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f3f4f6;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.magazine-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.magazine-photo-guide {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* Warning / Disclaimer */
+.magazine-warning {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #92400e;
+  line-height: 1.6;
+}
+
+/* ===================================
+   Responsive
+   =================================== */
+@media (max-width: 768px) {
+  .magazine-page {
+    padding-top: 4rem;
+  }
+
+  .magazine-title {
+    font-size: 2rem;
+  }
+
+  .magazine-featured-image img {
+    max-height: 300px;
+  }
+
+  .magazine-body h2 {
+    font-size: 1.35rem;
+  }
+
+  .magazine-info-card {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .magazine-control-section {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .magazine-gallery {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,311 @@
+.encyclopedia-page {
+  min-height: 100vh;
+  background-color: var(--bg-white, #ffffff);
+  padding-bottom: 4rem;
+}
+
+.ep-hero {
+  position: relative;
+  padding: 7rem 2rem 6rem;
+  text-align: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+.ep-hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  /* Gambar persawahan yang cerah dan estetis (AI Generated) */
+  background-image: url("/paddy_field_bg.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.ep-hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  /* Dark overlay for a premium look and perfect text contrast */
+  background: linear-gradient(to bottom, rgba(10, 20, 15, 0.5) 0%, rgba(10, 20, 15, 0.85) 100%);
+}
+
+.ep-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-hero-content .badge-small {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.ep-hero-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ep-hero-title span.highlight {
+  color: var(--primary-green);
+  position: relative;
+  display: inline-block;
+}
+
+.ep-hero-title span.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-green);
+  border-radius: 2px;
+}
+
+.ep-hero-desc {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Catalog Section Matching Reference */
+.ep-catalog-section {
+  max-width: 1200px;
+  margin: -2rem auto 0;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.ep-catalog-container {
+  background-color: #f4f5f4;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.ep-catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #d1d5db;
+  margin-bottom: 2rem;
+}
+
+.ep-catalog-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.ep-catalog-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  text-align: right;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.ep-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.ep-plant-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.ep-plant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.ep-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.ep-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 1rem;
+}
+
+.ep-card-text h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.ep-local-name {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.ep-card-arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f4f5f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.ep-plant-card:hover .ep-card-arrow {
+  background: var(--primary-green);
+  color: white;
+}
+
+.ep-card-risk {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.ep-card-risk.risk-high {
+  background-color: rgba(239, 68, 68, 0.06);
+  color: #e53e3e;
+  border: 1px solid rgba(239, 68, 68, 0.12);
+}
+
+.ep-card-risk.risk-med {
+  background-color: rgba(245, 158, 11, 0.06);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.ep-card-risk.risk-low {
+  background-color: rgba(16, 185, 129, 0.06);
+  color: #0f9d58;
+  border: 1px solid rgba(16, 185, 129, 0.12);
+}
+
+.risk-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ep-card-risk.risk-high .risk-dot {
+  background-color: #ef4444;
+  box-shadow: 0 0 4px rgba(239, 68, 68, 0.4);
+}
+
+.ep-card-risk.risk-med .risk-dot {
+  background-color: #f59e0b;
+  box-shadow: 0 0 4px rgba(245, 158, 11, 0.4);
+}
+
+.ep-card-risk.risk-low .risk-dot {
+  background-color: #10b981;
+  box-shadow: 0 0 4px rgba(16, 185, 129, 0.4);
+}
+
+.ep-card-image-wrapper {
+  background: #f4f5f4;
+  border-radius: 12px;
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ep-card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.ep-plant-card:hover .ep-card-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.ep-image-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+  .ep-hero {
+    padding: 5rem 1rem 4rem;
+  }
+  .ep-hero-title {
+    font-size: 2.5rem;
+  }
+  .ep-catalog-container {
+    padding: 1.5rem;
+  }
+  .ep-catalog-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .ep-catalog-subtitle {
+    text-align: left;
+  }
+}

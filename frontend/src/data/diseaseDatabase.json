@@ -1,0 +1,848 @@
+{
+  "bacterial_leaf_blight": {
+    "displayName": "Bacterial Leaf Blight",
+    "localName": "Hawar Daun Bakteri",
+    "scientificName": "Xanthomonas oryzae pv. oryzae",
+    "riskLevel": {
+      "label": "Risiko Tinggi",
+      "className": "risk-high",
+      "icon": "ph-fill ph-warning"
+    },
+    "description": "Hawar Daun Bakteri (BLB) adalah salah satu penyakit padi paling merusak di seluruh dunia. Bakteri menyerang melalui luka alami atau lubang stomata pada daun, menyebabkan daun menguning lalu mengering dari ujung ke pangkal. Pada serangan berat, seluruh hamparan sawah bisa gagal panen.",
+    "symptoms": [
+      "Daun menguning dari ujung dan menyebar ke pangkal membentuk pola huruf V",
+      "Tepi daun mengering berwarna cokelat keabu-abuan",
+      "Pada pagi hari, terlihat tetesan eksudat bakteri berwarna kuning keputihan pada permukaan daun",
+      "Daun muda layu dan menggulung seperti tersiram air panas",
+      "Pada serangan berat, seluruh daun mengering dan tanaman tampak seperti terbakar"
+    ],
+    "causes": "Disebabkan oleh bakteri Xanthomonas oryzae pv. oryzae yang masuk melalui luka mekanis, lubang stomata, atau hydathode pada ujung daun. Bakteri berkembang biak di jaringan xilem dan menyumbat transportasi air.",
+    "affectedParts": ["Daun", "Pelepah daun", "Ujung daun"],
+    "spreadMethod": "Menyebar melalui percikan air hujan, irigasi tergenang, angin kencang yang membawa tetesan air terinfeksi, alat pertanian yang terkontaminasi, dan benih yang terinfeksi. Bakteri bertahan di jerami sisa panen dan gulma.",
+    "idealConditions": "Berkembang pesat pada suhu 25–34°C, kelembaban tinggi >80%, musim hujan deras, penggunaan pupuk nitrogen berlebih, dan lahan tergenang terlalu lama.",
+    "chemicalControl": [
+      "Bakterisida berbahan aktif tembaga hidroksida atau tembaga oksiklorida sesuai dosis label",
+      "Streptomycin sulfat (jika diizinkan di wilayah setempat) untuk perlakuan benih",
+      "Campuran Bordeaux sebagai protektan saat cuaca mendukung penyakit"
+    ],
+    "biologicalControl": [
+      "Agen hayati Pseudomonas fluorescens sebagai antagonis bakteri patogen",
+      "Bacillus subtilis untuk meningkatkan ketahanan tanaman",
+      "Trichoderma spp. pada perlakuan benih dan tanah",
+      "Penggunaan ekstrak daun nimba (neem) sebagai penghambat pertumbuhan bakteri"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-drop",
+        "title": "Aplikasi bakterisida",
+        "description": "Semprot bakterisida berbahan aktif tembaga sesuai dosis anjuran pada label produk."
+      },
+      {
+        "icon": "ph-fill ph-plant",
+        "title": "Kurangi nitrogen",
+        "description": "Hentikan sementara pemupukan urea berlebih karena dapat memperparah perkembangan penyakit."
+      },
+      {
+        "icon": "ph-fill ph-waves",
+        "title": "Atur tata air",
+        "description": "Keringkan petakan secara berkala untuk menurunkan kelembaban mikro di sekitar tanaman."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-calendar-check",
+        "title": "Pantau perluasan bercak",
+        "description": "Cek daun muda dan daun bagian atas setiap 2 hari untuk melihat apakah bercak masih meluas."
+      },
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Semprot susulan",
+        "description": "Ulangi penyemprotan pada hari ke-5 sampai ke-7 jika cuaca lembab atau hujan berulang."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-seedling",
+        "title": "Gunakan benih sehat",
+        "description": "Pilih varietas tahan hawar daun dan gunakan benih bersertifikat."
+      },
+      {
+        "icon": "ph-fill ph-broom",
+        "title": "Sanitasi lahan",
+        "description": "Bersihkan jerami dan gulma yang dapat menjadi sumber inokulum bakteri."
+      }
+    ],
+    "notes": "Jika serangan meluas cepat setelah hujan dan angin, konsultasikan dengan PPL setempat untuk menentukan ambang tindakan di lahan.",
+    "referenceImages": [
+      "/assets/bacterial_leaf_blight/100133.jpg",
+      "/assets/bacterial_leaf_blight/100447.jpg",
+      "/assets/bacterial_leaf_blight/100681.jpg"
+    ],
+    "category": "disease",
+    "categoryLabel": "Penyakit",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "bacterial_leaf_streak": {
+    "displayName": "Bacterial Leaf Streak",
+    "localName": "Bercak Garis Bakteri",
+    "scientificName": "Xanthomonas oryzae pv. oryzicola",
+    "riskLevel": {
+      "label": "Risiko Sedang",
+      "className": "risk-med",
+      "icon": "ph-fill ph-warning-circle"
+    },
+    "description": "Bercak Garis Bakteri menyerang jaringan daun padi dan menimbulkan garis-garis sempit transparan di antara tulang daun. Berbeda dengan BLB, penyakit ini lebih menyerang mesofil daun daripada xilem. Meski dampaknya biasanya tidak separah BLB, serangan berat tetap dapat mengurangi hasil panen secara signifikan.",
+    "symptoms": [
+      "Garis-garis sempit berwarna cokelat kekuningan di antara tulang daun",
+      "Pada awal infeksi, garis tampak transparan kebasahan saat dilihat ke arah cahaya",
+      "Tetesan eksudat kuning pada permukaan daun saat pagi hari",
+      "Garis-garis dapat menyatu membentuk bercak lebar cokelat pada serangan berat",
+      "Daun menjadi kering dan rapuh dari ujung"
+    ],
+    "causes": "Disebabkan oleh bakteri Xanthomonas oryzae pv. oryzicola yang menginfeksi mesofil daun melalui stomata. Berbeda dari BLB yang menyerang xilem, BLS lebih terlokalisir di jaringan antara tulang daun.",
+    "affectedParts": ["Daun", "Pelepah daun"],
+    "spreadMethod": "Menyebar melalui percikan air hujan, embun yang berlebih, kontak antar daun, dan alat pertanian. Bakteri dapat bertahan pada sisa tanaman dan benih yang terinfeksi.",
+    "idealConditions": "Paling aktif pada kelembaban tinggi berkepanjangan, suhu 25–30°C, musim hujan, lahan dengan drainase buruk, dan penanaman terlalu rapat.",
+    "chemicalControl": [
+      "Bakterisida berbahan aktif tembaga hidroksida sesuai dosis label",
+      "Campuran streptomycin + tembaga oksiklorida untuk pencegahan",
+      "Perlakuan benih dengan fungisida-bakterisida sebelum tanam"
+    ],
+    "biologicalControl": [
+      "Pseudomonas fluorescens sebagai agen biokontrol",
+      "Bacillus amyloliquefaciens untuk meningkatkan daya tahan tanaman",
+      "Aplikasi kompos yang mengandung mikroba antagonis",
+      "Penerapan sistem SRI (System of Rice Intensification) untuk mengurangi kelembaban"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-scissors",
+        "title": "Kurangi sumber infeksi",
+        "description": "Buang daun yang sangat parah bila area serangan masih terbatas."
+      },
+      {
+        "icon": "ph-fill ph-drop",
+        "title": "Semprot tembaga",
+        "description": "Gunakan bakterisida berbahan aktif tembaga sesuai anjuran bila bercak aktif meluas."
+      },
+      {
+        "icon": "ph-fill ph-wind",
+        "title": "Kurangi kelembaban",
+        "description": "Jaga jarak tanam dan aliran udara agar daun tidak terlalu lama basah."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-eyes",
+        "title": "Inspeksi berkala",
+        "description": "Amati garis bercak baru pada daun muda setiap 2 sampai 3 hari."
+      },
+      {
+        "icon": "ph-fill ph-notebook",
+        "title": "Catat area serangan",
+        "description": "Tandai petakan terdampak agar penyemprotan dan pemantauan lebih terarah."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-plant",
+        "title": "Hindari pupuk berlebih",
+        "description": "Gunakan nitrogen seimbang dan tambahkan kalium sesuai rekomendasi tanah."
+      },
+      {
+        "icon": "ph-fill ph-waves",
+        "title": "Kelola air sawah",
+        "description": "Hindari genangan terlalu lama pada fase vegetatif padat."
+      }
+    ],
+    "notes": "Penyakit ini sering meningkat saat daun lama basah. Prioritaskan manajemen kelembaban dan sanitasi.",
+    "referenceImages": [
+      "/assets/bacterial_leaf_streak/100145.jpg",
+      "/assets/bacterial_leaf_streak/100409.jpg",
+      "/assets/bacterial_leaf_streak/100494.jpg",
+      "/assets/bacterial_leaf_streak/100593.jpg"
+    ],
+    "category": "disease",
+    "categoryLabel": "Penyakit",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "bacterial_panicle_blight": {
+    "displayName": "Bacterial Panicle Blight",
+    "localName": "Hawar Malai Bakteri",
+    "scientificName": "Burkholderia glumae",
+    "riskLevel": {
+      "label": "Risiko Tinggi",
+      "className": "risk-high",
+      "icon": "ph-fill ph-warning"
+    },
+    "description": "Hawar Malai Bakteri menyerang pada fase generatif tanaman padi, terutama saat pembungaan dan pengisian gabah. Bakteri Burkholderia glumae menginfeksi malai dan menyebabkan gabah hampa, perubahan warna malai, serta penurunan kualitas beras secara drastis. Penyakit ini semakin meningkat seiring pemanasan global.",
+    "symptoms": [
+      "Malai berubah warna menjadi cokelat kehitaman tidak merata",
+      "Gabah hampa atau setengah isi dengan warna pucat abnormal",
+      "Malai tegak karena gabah tidak berisi (tidak merunduk normal)",
+      "Bercak cokelat pada kulit gabah yang terinfeksi",
+      "Bulir beras yang dihasilkan berwarna kusam dengan bintik-bintik gelap"
+    ],
+    "causes": "Disebabkan oleh bakteri Burkholderia glumae yang menghasilkan toksin toxoflavin. Bakteri ini terbawa benih dan menginfeksi bunga saat malai keluar. Toksin merusak jaringan gabah muda dan menghambat pengisian.",
+    "affectedParts": ["Malai", "Gabah", "Bunga padi"],
+    "spreadMethod": "Terbawa benih (seed-borne), menyebar melalui percikan air saat hujan, dan udara lembab. Bakteri juga dapat ditularkan melalui serangga penyerbuk dan alat panen yang terkontaminasi.",
+    "idealConditions": "Suhu malam hari >25°C saat fase pembungaan, kelembaban tinggi >90%, hujan saat malai keluar, suhu siang 30–35°C, dan penanaman terlalu rapat.",
+    "chemicalControl": [
+      "Perlakuan benih dengan bakterisida sebelum persemaian",
+      "Aplikasi oxolinic acid pada fase awal keluar malai",
+      "Bakterisida berbahan aktif tembaga sebagai protektan sebelum pembungaan"
+    ],
+    "biologicalControl": [
+      "Bacillus subtilis sebagai antagonis Burkholderia glumae",
+      "Perlakuan benih dengan Trichoderma harzianum",
+      "Penggunaan varietas tahan panas yang berbunga pagi hari",
+      "Pengaturan waktu tanam agar pembungaan tidak bertepatan dengan suhu ekstrem"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-thermometer-hot",
+        "title": "Kurangi stres panas",
+        "description": "Pertahankan ketersediaan air agar tanaman tidak mengalami stres berat saat pembungaan."
+      },
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Aplikasi protektif",
+        "description": "Gunakan produk pengendali bakteri yang direkomendasikan untuk fase generatif."
+      },
+      {
+        "icon": "ph-fill ph-plant",
+        "title": "Nutrisi seimbang",
+        "description": "Hindari nitrogen berlebih pada fase bunting sampai berbunga."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-chart-line-up",
+        "title": "Pantau malai baru",
+        "description": "Amati malai yang baru keluar untuk melihat tingkat gabah hampa atau perubahan warna."
+      },
+      {
+        "icon": "ph-fill ph-drop",
+        "title": "Stabilkan air",
+        "description": "Jaga tinggi air sesuai fase tanaman agar stres tidak memperberat kerusakan."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-seedling",
+        "title": "Benih bebas patogen",
+        "description": "Gunakan benih sehat dan perlakuan benih bila riwayat lahan sering terserang."
+      },
+      {
+        "icon": "ph-fill ph-calendar",
+        "title": "Atur waktu tanam",
+        "description": "Hindari fase berbunga bertepatan dengan periode suhu sangat tinggi."
+      }
+    ],
+    "notes": "Kerusakan pada fase malai sulit dipulihkan penuh. Fokus pada pengurangan stres dan pencegahan musim berikutnya.",
+    "referenceImages": [
+      "/assets/bacterial_panicle_blight/100495.jpg",
+      "/assets/bacterial_panicle_blight/100868.jpg"
+    ],
+    "category": "disease",
+    "categoryLabel": "Penyakit",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "blast": {
+    "displayName": "Blast",
+    "localName": "Penyakit Blas",
+    "scientificName": "Magnaporthe oryzae",
+    "riskLevel": {
+      "label": "Risiko Tinggi",
+      "className": "risk-high",
+      "icon": "ph-fill ph-warning"
+    },
+    "description": "Penyakit Blas adalah penyakit jamur paling destruktif pada tanaman padi di seluruh dunia. Jamur Magnaporthe oryzae dapat menyerang semua bagian tanaman di atas tanah dan pada semua fase pertumbuhan. Serangan blas pada leher malai (neck blast) dapat menyebabkan kehilangan hasil hingga 100% pada petak yang terserang.",
+    "symptoms": [
+      "Bercak berbentuk belah ketupat (diamond/eye-shaped) dengan pusat abu-abu dan tepi cokelat gelap",
+      "Pada daun muda, bercak kecil berwarna cokelat yang cepat membesar",
+      "Leher malai menghitam dan patah (neck blast) sehingga malai menggantung",
+      "Bercak pada buku batang menyebabkan batang mudah rebah",
+      "Pada serangan berat, daun tampak terbakar keseluruhan"
+    ],
+    "causes": "Disebabkan oleh jamur Magnaporthe oryzae (anamorph: Pyricularia oryzae). Spora jamur berkecambah pada permukaan daun yang basah dan menembus sel epidermis menggunakan appressorium dengan tekanan turgor sangat tinggi.",
+    "affectedParts": ["Daun", "Leher malai", "Buku batang", "Gabah"],
+    "spreadMethod": "Spora disebarkan oleh angin jarak jauh, percikan air hujan, dan benih terinfeksi. Jamur bertahan pada jerami sisa panen, gulma inang alternatif, dan benih yang terinfeksi.",
+    "idealConditions": "Suhu 20–28°C, kelembaban >90%, embun malam yang berkepanjangan (>10 jam), nitrogen berlebih, dan penanaman varietas rentan.",
+    "chemicalControl": [
+      "Fungisida triazol (tebuconazole, propiconazole) untuk pengendalian kuratif",
+      "Fungisida strobilurin (azoxystrobin, trifloxystrobin) untuk proteksi preventif",
+      "Tricyclazole sebagai fungisida spesifik blas yang menghambat melanin appressorium",
+      "Isoprothiolane untuk pengendalian sistemik"
+    ],
+    "biologicalControl": [
+      "Trichoderma harzianum sebagai agen biokontrol dan peningkat ketahanan",
+      "Bacillus subtilis menginduksi ketahanan sistemik pada tanaman",
+      "Penggunaan silika (SiO₂) untuk memperkuat dinding sel daun",
+      "Ekstrak kompos yang kaya mikroba antagonis"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Aplikasi fungisida",
+        "description": "Gunakan fungisida rekomendasi untuk blas, misalnya kelompok triazol atau strobilurin sesuai fase tanaman dan dosis label produk."
+      },
+      {
+        "icon": "ph-fill ph-plant",
+        "title": "Kurangi nitrogen",
+        "description": "Hindari pemupukan nitrogen tinggi yang memicu jaringan daun terlalu lunak."
+      },
+      {
+        "icon": "ph-fill ph-wind",
+        "title": "Perbaiki sirkulasi",
+        "description": "Kurangi kelembaban kanopi dengan pengaturan air dan jarak tanam yang baik."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-eyes",
+        "title": "Pantau bercak aktif",
+        "description": "Cek apakah bercak baru muncul setelah 3 sampai 5 hari aplikasi."
+      },
+      {
+        "icon": "ph-fill ph-shield-check",
+        "title": "Lindungi fase kritis",
+        "description": "Jika tanaman mendekati keluar malai, lindungi leher malai sesuai rekomendasi setempat."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-seedling",
+        "title": "Varietas tahan",
+        "description": "Gunakan varietas yang memiliki ketahanan terhadap blas di wilayah tanam."
+      },
+      {
+        "icon": "ph-fill ph-broom",
+        "title": "Sanitasi sisa tanaman",
+        "description": "Kelola jerami dan sisa tanaman yang dapat menyimpan spora."
+      }
+    ],
+    "notes": "Blas dapat berkembang cepat pada malam lembab dan suhu sedang. Penanganan dini lebih efektif daripada menunggu serangan berat.",
+    "referenceImages": [
+      "/assets/blast/100045.jpg",
+      "/assets/blast/100083.jpg",
+      "/assets/blast/100184.jpg"
+    ],
+    "category": "disease",
+    "categoryLabel": "Penyakit",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "brown_spot": {
+    "displayName": "Brown Spot",
+    "localName": "Bercak Cokelat",
+    "scientificName": "Bipolaris oryzae",
+    "riskLevel": {
+      "label": "Risiko Sedang",
+      "className": "risk-med",
+      "icon": "ph-fill ph-warning-circle"
+    },
+    "description": "Bercak Cokelat adalah penyakit jamur yang umum dijumpai pada lahan padi yang miskin hara. Penyakit ini terkenal sebagai penyebab bencana kelaparan Bengal tahun 1943. Serangan sering dikaitkan dengan defisiensi kalium, fosfor, atau unsur mikro pada tanah, menjadikannya indikator penting kesehatan tanah.",
+    "symptoms": [
+      "Bercak oval cokelat dengan tepi kuning pada daun berukuran 1–2 cm",
+      "Bercak dapat menyebar ke seluruh permukaan daun pada serangan berat",
+      "Bercak pada bibit menyebabkan layu dan kematian",
+      "Gabah yang terinfeksi menunjukkan bercak cokelat-hitam pada kulit luar",
+      "Daun tua lebih dulu terserang, lalu menyebar ke daun muda"
+    ],
+    "causes": "Disebabkan oleh jamur Bipolaris oryzae (syn. Cochliobolus miyabeanus). Jamur menginfeksi melalui konidia yang berkecambah pada permukaan daun basah. Tanaman yang kekurangan nutrisi (terutama kalium dan silika) jauh lebih rentan.",
+    "affectedParts": ["Daun", "Pelepah daun", "Gabah", "Batang muda"],
+    "spreadMethod": "Spora terbawa angin dan percikan air hujan. Jamur bertahan pada benih terinfeksi (seed-borne), sisa tanaman di lahan, dan gulma inang. Benih menjadi sumber utama penyebaran antar musim.",
+    "idealConditions": "Tanah miskin hara (defisiensi K, P, Zn, Mn), kelembaban >80%, suhu 25–30°C, kekeringan periodik, dan pH tanah yang terlalu rendah atau tinggi.",
+    "chemicalControl": [
+      "Fungisida mancozeb untuk pencegahan pada fase vegetatif",
+      "Propiconazole untuk pengendalian kuratif pada serangan aktif",
+      "Perlakuan benih dengan carbendazim atau thiram sebelum persemaian",
+      "Edifenphos atau iprobenphos pada serangan berat"
+    ],
+    "biologicalControl": [
+      "Trichoderma viride sebagai agen biokontrol pada tanah dan benih",
+      "Pseudomonas fluorescens untuk meningkatkan ketersediaan hara dan ketahanan",
+      "Pupuk hayati yang mengandung bakteri pelarut fosfat",
+      "Aplikasi silika organik untuk memperkuat jaringan daun"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-plant",
+        "title": "Perbaiki nutrisi",
+        "description": "Tambahkan pemupukan berimbang terutama kalium dan unsur mikro sesuai rekomendasi."
+      },
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Fungisida selektif",
+        "description": "Gunakan fungisida selektif sesuai rekomendasi setempat jika bercak menyebar luas dan cuaca mendukung penyakit."
+      },
+      {
+        "icon": "ph-fill ph-drop",
+        "title": "Stabilkan air",
+        "description": "Hindari kekeringan karena stres air dapat memperparah gejala."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-chart-line-up",
+        "title": "Pantau respon daun",
+        "description": "Amati daun baru setelah perbaikan nutrisi dan pengendalian."
+      },
+      {
+        "icon": "ph-fill ph-notebook",
+        "title": "Catat area miskin hara",
+        "description": "Petakan bagian sawah yang sering menunjukkan gejala untuk perbaikan tanah."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-flask",
+        "title": "Uji tanah",
+        "description": "Lakukan pemupukan berdasarkan kondisi tanah dan kebutuhan varietas."
+      },
+      {
+        "icon": "ph-fill ph-seedling",
+        "title": "Benih sehat",
+        "description": "Gunakan benih bersih dan perlakuan benih bila diperlukan."
+      }
+    ],
+    "notes": "Bercak cokelat sering menjadi indikator masalah kesuburan. Perbaikan nutrisi biasanya sama pentingnya dengan pengendalian penyakit.",
+    "referenceImages": [
+      "/assets/brown_spot/100001.jpg",
+      "/assets/brown_spot/100142.jpg",
+      "/assets/brown_spot/100160.jpg"
+    ],
+    "category": "disease",
+    "categoryLabel": "Penyakit",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "dead_heart": {
+    "displayName": "Dead Heart",
+    "localName": "Pucuk Mati / Sundep",
+    "scientificName": "Scirpophaga incertulas (Penggerek Batang Padi)",
+    "riskLevel": {
+      "label": "Risiko Sedang",
+      "className": "risk-med",
+      "icon": "ph-fill ph-warning-circle"
+    },
+    "description": "Dead Heart atau Sundep adalah gejala kerusakan akibat serangan penggerek batang padi pada fase vegetatif. Larva penggerek memasuki batang melalui lubang kecil di pelepah daun dan memakan jaringan dalam batang, memutus jalur transportasi nutrisi ke pucuk sehingga pucuk tengah mengering dan mati.",
+    "symptoms": [
+      "Pucuk tengah (daun terbungkus termuda) layu, menguning, lalu mengering",
+      "Pucuk yang mati mudah dicabut dari rumpun karena pangkal sudah terputus",
+      "Lubang kecil pada batang dekat permukaan air atau tanah",
+      "Kotoran larva (frass) berwarna cokelat pada lubang masuk",
+      "Rumpun yang terserang menunjukkan pertumbuhan tidak seragam"
+    ],
+    "causes": "Disebabkan oleh larva penggerek batang padi kuning (Scirpophaga incertulas) atau penggerek batang padi bergaris (Chilo suppressalis). Ngengat betina meletakkan telur pada permukaan daun, larva menetas dan memasuki batang.",
+    "affectedParts": ["Batang", "Pucuk tengah", "Ruas batang"],
+    "spreadMethod": "Ngengat dewasa terbang dan meletakkan telur pada tanaman padi. Larva berpindah antar rumpun melalui air atau kontak langsung. Hama bertahan pada tunggul padi, jerami, dan gulma gramineae.",
+    "idealConditions": "Populasi tinggi pada penanaman tidak serempak, penggunaan nitrogen berlebih (jaringan lunak), tunggul padi tidak dikelola, cahaya lampu di malam hari yang menarik ngengat.",
+    "chemicalControl": [
+      "Insektisida karbofuran granul pada lubang tanam saat tanam",
+      "Fipronil untuk perlakuan benih atau aplikasi awal",
+      "Klorantraniliprol (Rynaxypyr) sebagai pilihan modern yang lebih ramah musuh alami",
+      "Aplikasi insektisida hanya jika populasi melewati ambang ekonomi"
+    ],
+    "biologicalControl": [
+      "Parasitoid telur Trichogramma japonicum dan Telenomus rowani",
+      "Predator alami: laba-laba, capung, kumbang, dan burung pemakan serangga",
+      "Pemasangan perangkap lampu untuk ngengat dewasa",
+      "Pelepasan Trichogramma secara massal pada awal serangan"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-bug",
+        "title": "Cek larva penggerek",
+        "description": "Periksa pangkal batang dan rumpun sekitar untuk menemukan tanda lubang atau larva."
+      },
+      {
+        "icon": "ph-fill ph-scissors",
+        "title": "Buang rumpun parah",
+        "description": "Cabut dan musnahkan bagian yang sangat rusak bila serangan masih terbatas."
+      },
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Pengendalian hama",
+        "description": "Gunakan insektisida selektif sesuai rekomendasi PPL bila populasi melewati ambang kendali dan ikuti dosis label produk."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-eyes",
+        "title": "Pantau anakan baru",
+        "description": "Amati apakah pucuk mati bertambah pada rumpun sekitar."
+      },
+      {
+        "icon": "ph-fill ph-map-pin",
+        "title": "Tandai titik serangan",
+        "description": "Fokuskan pemantauan di area yang menunjukkan gejala awal."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-calendar",
+        "title": "Tanam serempak",
+        "description": "Tanam serempak untuk memutus siklus hama di hamparan."
+      },
+      {
+        "icon": "ph-fill ph-broom",
+        "title": "Kelola sisa tunggul",
+        "description": "Bersihkan tunggul dan jerami yang dapat menjadi tempat bertahan hama."
+      }
+    ],
+    "notes": "Konfirmasi lapangan penting karena dead heart lebih sering berkaitan dengan hama penggerek dibanding patogen daun.",
+    "referenceImages": [
+      "/assets/dead_heart/100063.jpg",
+      "/assets/dead_heart/100116.jpg",
+      "/assets/dead_heart/100146.jpg"
+    ],
+    "category": "pest",
+    "categoryLabel": "Gejala Hama",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "downy_mildew": {
+    "displayName": "Downy Mildew",
+    "localName": "Bulai / Embun Bulu",
+    "scientificName": "Sclerophthora macrospora",
+    "riskLevel": {
+      "label": "Risiko Sedang",
+      "className": "risk-med",
+      "icon": "ph-fill ph-warning-circle"
+    },
+    "description": "Bulai atau Downy Mildew pada padi disebabkan oleh oomycete Sclerophthora macrospora. Penyakit ini menyerang tanaman padi terutama pada kondisi tergenang dan lembab, menyebabkan pertumbuhan abnormal, daun pucat, dan deformasi organ tanaman. Meski tidak selalu mematikan, serangan berat dapat menghambat pembentukan malai.",
+    "symptoms": [
+      "Daun muda berwarna pucat kekuningan atau putih kekuningan",
+      "Pertumbuhan tanaman kerdil dan tidak normal (malformasi)",
+      "Lapisan halus berwarna putih keabu-abuan pada permukaan bawah daun saat kondisi lembab",
+      "Daun menebal, kaku, dan kadang bergelombang",
+      "Anakan berlebihan tapi kecil-kecil dan tidak produktif"
+    ],
+    "causes": "Disebabkan oleh oomycete Sclerophthora macrospora yang memproduksi zoospora aktif di air genangan. Zoospora berenang menuju tanaman dan menginfeksi melalui akar atau pangkal batang terendam.",
+    "affectedParts": ["Daun", "Batang", "Seluruh tajuk tanaman"],
+    "spreadMethod": "Menyebar melalui zoospora di air genangan sawah, percikan air hujan, dan tanah terinfeksi. Patogen bertahan sebagai oospora di tanah dan sisa tanaman selama bertahun-tahun.",
+    "idealConditions": "Genangan air berkepanjangan, suhu 20–25°C, cuaca berawan dan lembab, drainase buruk, dan persemaian yang terlalu basah.",
+    "chemicalControl": [
+      "Metalaxyl atau metalaxyl-M untuk perlakuan benih sebelum persemaian",
+      "Fosetyl-Al sebagai fungisida sistemik anti-oomycete",
+      "Campuran mankozeb + metalaxyl untuk perlindungan ganda",
+      "Dimethomorph sebagai alternatif modern"
+    ],
+    "biologicalControl": [
+      "Trichoderma spp. sebagai agen biokontrol di tanah",
+      "Perbaikan drainase sebagai pengendalian kultur teknis utama",
+      "Penggunaan benih sehat dari area bebas penyakit",
+      "Rotasi tanaman dengan tanaman non-gramineae"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-scissors",
+        "title": "Singkirkan tanaman parah",
+        "description": "Buang tanaman yang sangat terinfeksi agar sumber penyakit berkurang."
+      },
+      {
+        "icon": "ph-fill ph-waves",
+        "title": "Perbaiki drainase",
+        "description": "Kurangi genangan dan kelembaban berlebih pada area pertanaman."
+      },
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Fungisida protektif",
+        "description": "Gunakan fungisida yang sesuai bila gejala aktif dan cuaca lembab berlanjut."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-cloud-rain",
+        "title": "Pantau setelah hujan",
+        "description": "Cek gejala baru setelah periode hujan atau embun panjang."
+      },
+      {
+        "icon": "ph-fill ph-plant",
+        "title": "Dukung pemulihan",
+        "description": "Pastikan nutrisi dan air cukup agar tanaman sehat dapat pulih."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-seedling",
+        "title": "Benih dan bibit sehat",
+        "description": "Gunakan bahan tanam sehat dan hindari area persemaian terlalu lembab."
+      },
+      {
+        "icon": "ph-fill ph-wind",
+        "title": "Sirkulasi baik",
+        "description": "Atur jarak dan kepadatan agar kanopi tidak terlalu lembab."
+      }
+    ],
+    "notes": "Kelembaban tinggi adalah faktor utama. Drainase dan sanitasi perlu menjadi prioritas.",
+    "referenceImages": [
+      "/assets/downy_mildew/100059.jpg",
+      "/assets/downy_mildew/100308.jpg",
+      "/assets/downy_mildew/100454.jpg"
+    ],
+    "category": "disease",
+    "categoryLabel": "Penyakit",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "hispa": {
+    "displayName": "Hispa",
+    "localName": "Kumbang Hispa",
+    "scientificName": "Dicladispa armigera",
+    "riskLevel": {
+      "label": "Risiko Sedang",
+      "className": "risk-med",
+      "icon": "ph-fill ph-warning-circle"
+    },
+    "description": "Hispa adalah hama kumbang kecil berduri yang menyerang daun padi baik pada fase dewasa maupun larva. Kumbang dewasa mengikis permukaan atas daun membentuk garis-garis putih sejajar, sementara larva mengorok (mining) di dalam jaringan daun. Serangan berat menyebabkan daun memutih dan mengurangi kapasitas fotosintesis drastis.",
+    "symptoms": [
+      "Garis-garis putih transparan sejajar pada permukaan atas daun (bekas kikisan dewasa)",
+      "Bercak membran transparan pada daun (bekas korokan larva di dalam daun)",
+      "Daun tampak memutih atau keperakan pada serangan berat",
+      "Ujung daun mengering dan menggulung",
+      "Kumbang kecil berwarna biru-hitam berduri terlihat pada permukaan daun"
+    ],
+    "causes": "Disebabkan oleh kumbang Dicladispa armigera (famili Chrysomelidae). Kumbang dewasa berukuran ~5mm berwarna biru kehitaman dengan duri di seluruh tubuh. Larva memakan jaringan mesofil daun dari dalam (leaf miner).",
+    "affectedParts": ["Daun (permukaan atas dan jaringan mesofil)"],
+    "spreadMethod": "Kumbang dewasa terbang aktif dan berpindah antar sawah. Telur diletakkan di ujung daun, larva menetas dan langsung masuk ke jaringan daun. Populasi meningkat saat musim hujan.",
+    "idealConditions": "Musim hujan dengan kelembaban tinggi, suhu 25–30°C, penanaman rapat, nitrogen berlebih (daun lunak dan rimbun), dan tidak adanya musuh alami.",
+    "chemicalControl": [
+      "Klorantraniliprol untuk pengendalian larva leaf miner",
+      "Fipronil sebagai insektisida kontak dan lambung",
+      "Karbosulfan untuk pengendalian kumbang dewasa",
+      "Aplikasi hanya jika kepadatan >2 kumbang/rumpun atau >5% daun rusak"
+    ],
+    "biologicalControl": [
+      "Parasitoid larva: Eulophus femoralis dan Pediobius parvulus",
+      "Predator alami: laba-laba, kepik predator, dan kumbang tanah",
+      "Pengumpulan manual kumbang dewasa pada pagi hari saat aktif",
+      "Mempertahankan habitat musuh alami (pematang berumput, tanaman pinggir)"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-bug",
+        "title": "Periksa hama",
+        "description": "Cari kumbang kecil atau larva pada permukaan daun dan gulungan daun."
+      },
+      {
+        "icon": "ph-fill ph-scissors",
+        "title": "Potong daun rusak",
+        "description": "Potong ujung daun yang sangat parah pada serangan terbatas."
+      },
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Kendalikan selektif",
+        "description": "Gunakan insektisida selektif sesuai ambang kendali, rekomendasi PPL, dan dosis label produk."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-eyes",
+        "title": "Pantau daun baru",
+        "description": "Amati apakah garis putih bertambah pada daun baru."
+      },
+      {
+        "icon": "ph-fill ph-users-three",
+        "title": "Cek hamparan sekitar",
+        "description": "Lihat apakah serangan juga terjadi pada petakan tetangga."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-broom",
+        "title": "Sanitasi gulma",
+        "description": "Kurangi gulma sekitar pematang yang dapat menjadi tempat hama."
+      },
+      {
+        "icon": "ph-fill ph-calendar",
+        "title": "Tanam serempak",
+        "description": "Tanam serempak membantu menekan perkembangan populasi hama."
+      }
+    ],
+    "notes": "Karena hispa adalah hama, hasil AI perlu dikonfirmasi dengan melihat keberadaan serangga pada daun.",
+    "referenceImages": [
+      "/assets/hispa/100193.jpg",
+      "/assets/hispa/100252.jpg",
+      "/assets/hispa/100290.jpg"
+    ],
+    "category": "pest",
+    "categoryLabel": "Hama",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "normal": {
+    "displayName": "Normal",
+    "localName": "Tanaman Sehat",
+    "scientificName": "Tidak terdeteksi penyakit utama",
+    "riskLevel": {
+      "label": "Sehat",
+      "className": "risk-low",
+      "icon": "ph-fill ph-check-circle"
+    },
+    "description": "Model AI tidak mendeteksi gejala utama penyakit atau hama pada gambar daun padi ini. Daun menunjukkan warna hijau normal, permukaan bersih tanpa bercak, dan struktur jaringan yang utuh. Meski demikian, pemantauan rutin tetap diperlukan karena AI memiliki keterbatasan dan gejala awal bisa sangat halus.",
+    "symptoms": [
+      "Daun berwarna hijau segar dan seragam tanpa bercak atau perubahan warna",
+      "Permukaan daun halus tanpa goresan, lubang, atau bekas gigitan",
+      "Batang kokoh dan tegak dengan warna normal",
+      "Pertumbuhan anakan seragam dan sesuai umur tanaman",
+      "Tidak ada tanda-tanda layu, kerdil, atau deformasi"
+    ],
+    "causes": "Tidak ada patogen atau hama terdeteksi. Kondisi ini menunjukkan bahwa tanaman dalam keadaan sehat berdasarkan analisis visual AI.",
+    "affectedParts": [],
+    "spreadMethod": "Tidak berlaku untuk tanaman sehat.",
+    "idealConditions": "Tanaman sehat tumbuh optimal pada suhu 20–35°C, kelembaban terkontrol, pemupukan berimbang (N-P-K sesuai kebutuhan), pengairan teratur, dan sanitasi lahan yang baik.",
+    "chemicalControl": [
+      "Tidak diperlukan pengendalian kimiawi pada tanaman sehat",
+      "Fokus pada pemupukan berimbang sesuai fase tanaman",
+      "Lakukan penyemprotan preventif hanya jika ada riwayat serangan di wilayah sekitar"
+    ],
+    "biologicalControl": [
+      "Pertahankan ekosistem sawah yang seimbang dengan musuh alami",
+      "Gunakan pupuk organik dan kompos untuk meningkatkan kesehatan tanah",
+      "Terapkan sistem tanam terpadu (IPM) sebagai prinsip dasar",
+      "Pertahankan keragaman hayati di pematang sawah"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-check-circle",
+        "title": "Pertahankan perawatan",
+        "description": "Lanjutkan pemupukan, pengairan, dan pemantauan rutin sesuai fase tanaman."
+      },
+      {
+        "icon": "ph-fill ph-camera",
+        "title": "Dokumentasi berkala",
+        "description": "Ambil foto pembanding setiap beberapa hari untuk mendeteksi perubahan lebih awal."
+      },
+      {
+        "icon": "ph-fill ph-leaf",
+        "title": "Jaga kanopi sehat",
+        "description": "Pastikan tanaman mendapat cahaya cukup dan tidak terlalu rapat."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-calendar-check",
+        "title": "Monitoring mingguan",
+        "description": "Periksa daun muda, pangkal batang, dan malai agar gejala awal tidak terlewat."
+      },
+      {
+        "icon": "ph-fill ph-drop",
+        "title": "Air stabil",
+        "description": "Jaga tata air sesuai fase pertumbuhan padi."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-shield-check",
+        "title": "Pencegahan rutin",
+        "description": "Gunakan benih sehat, sanitasi lahan, dan pemupukan berimbang."
+      },
+      {
+        "icon": "ph-fill ph-notebook",
+        "title": "Catat kondisi lahan",
+        "description": "Simpan riwayat cuaca, pupuk, dan gejala untuk evaluasi musim berikutnya."
+      }
+    ],
+    "notes": "Hasil normal bukan jaminan bebas masalah. Ulangi diagnosis jika muncul bercak, daun menguning, atau pertumbuhan tidak normal.",
+    "referenceImages": [
+      "/assets/normal/100053.jpg",
+      "/assets/normal/100135.jpg",
+      "/assets/normal/100144.jpg"
+    ],
+    "category": "healthy",
+    "categoryLabel": "Sehat",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  },
+  "tungro": {
+    "displayName": "Tungro",
+    "localName": "Penyakit Tungro",
+    "scientificName": "Rice Tungro Bacilliform Virus (RTBV) & Rice Tungro Spherical Virus (RTSV)",
+    "riskLevel": {
+      "label": "Risiko Tinggi",
+      "className": "risk-high",
+      "icon": "ph-fill ph-warning"
+    },
+    "description": "Tungro adalah penyakit virus ganda yang sangat merusak padi di Asia Tenggara. Penyakit ini disebabkan oleh dua virus berbeda (RTBV dan RTSV) yang ditularkan secara sinergis oleh wereng hijau (Nephotettix virescens). Tanaman yang terinfeksi menunjukkan penguningan khas oranye, kerdil, dan penurunan hasil drastis.",
+    "symptoms": [
+      "Daun muda menguning-oranye dari ujung, berbeda dari defisiensi nitrogen yang menguning dari daun tua",
+      "Tanaman kerdil dengan ruas batang memendek",
+      "Anakan berkurang dan pertumbuhan tidak seragam dalam satu petakan",
+      "Malai keluar terlambat, tidak sempurna, dan gabah sebagian besar hampa",
+      "Akar tanaman terinfeksi berwarna cokelat gelap dan jumlahnya sedikit"
+    ],
+    "causes": "Disebabkan oleh kompleks dua virus: Rice Tungro Bacilliform Virus (RTBV, genus Tungrovirus) menyebabkan gejala kuning, dan Rice Tungro Spherical Virus (RTSV, genus Waikavirus) membantu transmisi oleh vektor. Keduanya ditularkan oleh wereng hijau secara semi-persistent.",
+    "affectedParts": ["Seluruh tanaman", "Daun", "Batang", "Akar", "Malai"],
+    "spreadMethod": "Ditularkan oleh wereng hijau (Nephotettix virescens) secara semi-persistent. Wereng memperoleh virus dalam 5–30 menit mengisap tanaman sakit dan menularkan ke tanaman sehat. Virus tidak terbawa benih.",
+    "idealConditions": "Populasi wereng hijau tinggi, penanaman tidak serempak yang menyediakan tanaman inang sepanjang musim, varietas rentan, dan migrasi wereng dari daerah endemis.",
+    "chemicalControl": [
+      "Insektisida untuk mengendalikan wereng hijau vektor (bukan untuk virus langsung)",
+      "BPMC (fenobucarb) atau imidakloprid untuk wereng hijau dewasa",
+      "Fipronil granul untuk pengendalian awal di persemaian",
+      "Hindari insektisida berspektrum luas yang membunuh musuh alami wereng"
+    ],
+    "biologicalControl": [
+      "Parasitoid wereng: Anagrus spp. dan Oligosita spp.",
+      "Predator wereng: laba-laba, kepik mirid (Cyrtorhinus lividipennis), kumbang Coccinellidae",
+      "Jamur entomopatogen: Beauveria bassiana dan Metarhizium anisopliae untuk wereng",
+      "Pemasangan perangkap kuning berlem untuk monitoring dan pengendalian wereng"
+    ],
+    "quickActions": [
+      {
+        "icon": "ph-fill ph-bug",
+        "title": "Kendalikan vektor",
+        "description": "Pantau dan kendalikan wereng hijau sesuai ambang kendali, rekomendasi PPL, dan dosis label produk."
+      },
+      {
+        "icon": "ph-fill ph-scissors",
+        "title": "Roguing tanaman sakit",
+        "description": "Cabut tanaman bergejala berat agar sumber virus berkurang."
+      },
+      {
+        "icon": "ph-fill ph-users-three",
+        "title": "Koordinasi hamparan",
+        "description": "Lakukan pengendalian bersama karena vektor dapat berpindah antarpetakan."
+      }
+    ],
+    "sevenDayCare": [
+      {
+        "icon": "ph-fill ph-eyes",
+        "title": "Pantau penyebaran",
+        "description": "Cek tanaman kerdil dan daun menguning pada rumpun sekitar setiap 2 hari."
+      },
+      {
+        "icon": "ph-fill ph-spray-bottle",
+        "title": "Pengendalian lanjutan",
+        "description": "Jika populasi wereng masih tinggi, lanjutkan tindakan sesuai rekomendasi lapangan."
+      }
+    ],
+    "prevention": [
+      {
+        "icon": "ph-fill ph-seedling",
+        "title": "Varietas tahan",
+        "description": "Gunakan varietas tahan tungro di daerah endemis."
+      },
+      {
+        "icon": "ph-fill ph-calendar",
+        "title": "Tanam serempak",
+        "description": "Tanam serempak dan hindari pertanaman tidak seragam umur di satu hamparan."
+      }
+    ],
+    "notes": "Tungro perlu respons cepat karena virus tidak dapat disembuhkan pada tanaman yang sudah sakit. Fokus pada pencabutan sumber dan pengendalian vektor.",
+    "referenceImages": [
+      "/assets/tungro/100011.jpg",
+      "/assets/tungro/100163.jpg",
+      "/assets/tungro/100287.jpg"
+    ],
+    "category": "disease",
+    "categoryLabel": "Penyakit",
+    "fieldDisclaimer": "Hasil AI adalah pendukung keputusan. Validasi kondisi lapangan tetap disarankan, terutama sebelum aplikasi pestisida atau fungisida. Ikuti dosis dan aturan pakai pada label produk.",
+    "photoGuide": "Gunakan foto daun padi yang dekat, fokus, cahaya cukup, dan latar belakang tidak terlalu ramai agar prediksi lebih stabil."
+  }
+}
