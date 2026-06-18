@@ -2,17 +2,17 @@ export default function Footer() {
   return (
     <footer id="contact" className="site-footer">
       <div className="footer-banner">
-        <h3>Detect paddy diseases instantly with our AI. Save your harvest up to 100%.</h3>
-        <a href="#/diagnosis" className="btn-dark">Scan Now</a>
+        <h3>Deteksi penyakit padi secara instan dengan AI kami. Selamatkan panen Anda hingga 100%.</h3>
+        <a href="#/diagnosis" className="btn-dark">Pindai Sekarang</a>
       </div>
 
       <div className="footer-main-box">
         <div className="footer-top-row">
           <div className="footer-links">
-            <a href="#/">Home</a>
+            <a href="#/">Beranda</a>
             <a href="#/diagnosis">Diagnosis</a>
-            <a href="#/encyclopedia">Encyclopedia</a>
-            <a href="#/contact">Contact</a>
+            <a href="#/encyclopedia">Ensiklopedia</a>
+            <a href="#/contact">Kontak</a>
           </div>
 
           <div className="footer-logo-center">
@@ -33,8 +33,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom-row">
-          <p className="copyright-text">Copy right: Padi AI paddy plants on @2026</p>
-          <a href="#/contact" className="btn-outline">Let talk with us &rarr;</a>
+          <p className="copyright-text">Hak Cipta: Padi AI tanaman padi @2026</p>
+          <a href="#/contact" className="btn-outline">Hubungi Kami &rarr;</a>
         </div>
       </div>
     </footer>

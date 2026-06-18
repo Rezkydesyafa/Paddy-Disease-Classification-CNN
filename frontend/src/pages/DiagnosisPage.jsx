@@ -211,7 +211,7 @@ async function exportDiagnosisImage({ resultSrc, prediction, details, rawDetails
 
   context.fillStyle = "#0a6b50";
   context.font = "700 26px 'Plus Jakarta Sans', Arial, sans-serif";
-  context.fillText(`${formatConfidence(prediction.confidence)} confidence AI`, 550, 340);
+  context.fillText(`${formatConfidence(prediction.confidence)} Kepercayaan AI`, 550, 340);
 
   context.fillStyle = "#718096";
   context.font = "24px 'Plus Jakarta Sans', Arial, sans-serif";
@@ -572,13 +572,13 @@ export default function DiagnosisPage() {
 
         <div id="upload-view" className={`view-section ${view === "upload" ? "active" : ""}`}>
           <div className="page-title" id="main-title">
-            <h1>Identify precisely. <br />Act immediately.</h1>
+            <h1>Identifikasi secara presisi. <br />Bertindak segera.</h1>
             <p>Sistem kami membandingkan pola bercak pada daun Anda dengan ribuan dataset penyakit padi. Pastikan daun terlihat jelas dan memiliki pencahayaan yang cukup untuk hasil optimal.</p>
           </div>
 
           <div className="upload-grid">
             <div className="upload-text">
-              <div className="badge-small">CNN Technology</div>
+              <div className="badge-small">Teknologi CNN</div>
               <ul style={{ listStyle: "none", color: "var(--text-gray)", fontSize: "0.9rem", display: "flex", flexDirection: "column", gap: "8px", margin: "1rem 0 1.5rem 0" }}>
                 <li><i className="ph ph-check-circle" style={{ color: "var(--primary-green)" }}></i> Mendukung JPG & PNG</li>
                 <li><i className="ph ph-check-circle" style={{ color: "var(--primary-green)" }}></i> Maksimal ukuran file 5MB</li>
@@ -602,16 +602,16 @@ export default function DiagnosisPage() {
             <div className="dropzone" onClick={() => fileInputRef.current?.click()}>
               <input ref={fileInputRef} type="file" id="file-input" accept="image/jpeg, image/png, image/jpg" hidden onChange={handleFileChange} />
               <div className="dropzone-icon"><i className="ph-fill ph-camera-plus"></i></div>
-              <h3>Drag & Drop your photo here</h3>
-              <p>or click to browse from your device</p>
-              <button className="btn-outline" style={{ marginTop: "10px" }} type="button">Select File</button>
+              <h3>Seret & Letakkan foto Anda di sini</h3>
+              <p>atau klik untuk menelusuri dari perangkat Anda</p>
+              <button className="btn-outline" style={{ marginTop: "10px" }} type="button">Pilih File</button>
             </div>
           </div>
         </div>
 
         <div id="preview-view" className={`view-section ${view === "preview" ? "active" : ""}`}>
           <div className="preview-pane">
-            <h2 style={{ marginBottom: "0.5rem" }}>Adjust the scanning area</h2>
+            <h2 style={{ marginBottom: "0.5rem" }}>Sesuaikan area pemindaian</h2>
             <p style={{ color: "var(--text-gray)", marginBottom: "1.5rem", fontSize: "0.9rem" }}>Tarik sudut kotak untuk memfokuskan pindaian pada area daun yang terinfeksi penyakit.</p>
 
             <div className="image-viewport">
@@ -633,9 +633,9 @@ export default function DiagnosisPage() {
             </div>
 
             <div className="action-buttons">
-              <button className="btn-outline" onClick={resetWorkspace} type="button"><i className="ph ph-arrow-counter-clockwise"></i> Retake Photo</button>
+              <button className="btn-outline" onClick={resetWorkspace} type="button"><i className="ph ph-arrow-counter-clockwise"></i> Ambil Ulang Foto</button>
               <button className="btn-primary" onClick={startAnalysis} type="button">
-                Scan Area <span className="arrow-circle"><i className="ph ph-arrow-right"></i></span>
+                Pindai Area <span className="arrow-circle"><i className="ph ph-arrow-right"></i></span>
               </button>
             </div>
           </div>
@@ -644,7 +644,7 @@ export default function DiagnosisPage() {
         <div id="loading-view" className={`view-section ${view === "loading" ? "active" : ""}`}>
           <div className="preview-pane" style={{ padding: "4rem 0" }}>
             <div className="spinner"></div>
-            <h2 style={{ marginBottom: "0.5rem", color: "var(--primary-green)" }}>Analyzing with AI model...</h2>
+            <h2 style={{ marginBottom: "0.5rem", color: "var(--primary-green)" }}>Menganalisis dengan model AI...</h2>
             <p style={{ color: "var(--text-gray)" }}>{loadingStep}</p>
             <div className="loading-steps">
               {LOADING_STEPS.map((step) => (
@@ -660,7 +660,7 @@ export default function DiagnosisPage() {
           {diagnosisResult && diseaseDetails && (
             <>
               <div className="result-actions-bar">
-                <button className="btn-outline" onClick={resetWorkspace} type="button"><i className="ph ph-arrow-left"></i> Back to Diagnosis</button>
+                <button className="btn-outline" onClick={resetWorkspace} type="button"><i className="ph ph-arrow-left"></i> Kembali ke Diagnosis</button>
                 <div className="result-actions-group">
                   <button className="btn-save" onClick={saveResult} type="button">
                     <i className="ph-fill ph-bookmark-simple"></i> Simpan ke Riwayat
@@ -675,7 +675,7 @@ export default function DiagnosisPage() {
                 <div className="result-sidebar">
                   <img id="image-result" src={resultSrc} alt="Result Scan" />
 
-                  <h3 className="section-header-small"><i className="ph-fill ph-chart-bar"></i> Top 3 AI Prediction</h3>
+                  <h3 className="section-header-small"><i className="ph-fill ph-chart-bar"></i> 3 Prediksi AI Teratas</h3>
                   <div className="prediction-list">
                     {diagnosisResult.topPredictions.map((prediction) => {
                       const predictionDetails = getDiseaseDetails(prediction.label);
@@ -699,7 +699,7 @@ export default function DiagnosisPage() {
 
                   {!isLowConfidence && diseaseDetails.referenceImages.length > 0 && (
                     <>
-                      <h3 className="section-header-small"><i className="ph-fill ph-images"></i> Similar Reference</h3>
+                      <h3 className="section-header-small"><i className="ph-fill ph-images"></i> Referensi Serupa</h3>
                       <div className="gallery-row">
                         {diseaseDetails.referenceImages.map((imageUrl, index) => (
                           <img src={imageUrl} className="gallery-thumb" alt={`${diseaseDetails.displayName} ref ${index + 1}`} key={imageUrl} />

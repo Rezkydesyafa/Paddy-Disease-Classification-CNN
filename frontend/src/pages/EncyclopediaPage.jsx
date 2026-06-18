@@ -23,8 +23,8 @@ export default function EncyclopediaPage() {
         <section className="ep-hero">
           <div className="ep-hero-bg"></div>
           <div className="ep-hero-content">
-            <div className="badge-small">Knowledge Base</div>
-            <h1 className="ep-hero-title">Padi Disease <span className="highlight">Encyclopedia</span></h1>
+            <div className="badge-small">Pusat Pengetahuan</div>
+            <h1 className="ep-hero-title">Ensiklopedia <span className="highlight">Penyakit Padi</span></h1>
             <p className="ep-hero-desc">Eksplorasi panduan komprehensif mengenai penyakit padi, gejala-gejalanya, dan rekomendasi penanganan yang tepat.</p>
           </div>
         </section>
@@ -32,7 +32,7 @@ export default function EncyclopediaPage() {
         <section className="ep-catalog-section">
           <div className="ep-catalog-container">
             <div className="ep-catalog-header">
-              <h2 className="ep-catalog-title">DISEASE CATALOG</h2>
+              <h2 className="ep-catalog-title">KATALOG PENYAKIT</h2>
               <div className="ep-catalog-subtitle">
                 Panduan komprehensif penyakit<br/>dan penanganan yang tepat
               </div>

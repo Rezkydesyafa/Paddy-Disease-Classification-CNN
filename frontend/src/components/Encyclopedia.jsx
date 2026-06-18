@@ -12,7 +12,7 @@ export default function Encyclopedia() {
     <section className="encyclopedia" id="encyclopedia" style={{ maxWidth: '1300px', margin: '0 auto' }}>
       <div className="ep-catalog-container" style={{ textAlign: 'left' }}>
         <div className="ep-catalog-header">
-          <h2 className="ep-catalog-title">DISEASE ENCYCLOPEDIA</h2>
+          <h2 className="ep-catalog-title">ENSIKLOPEDIA PENYAKIT</h2>
           <div className="ep-catalog-subtitle">
             Kenali berbagai jenis penyakit pada tanaman padi<br/>dan cara penanganannya yang tepat.
           </div>

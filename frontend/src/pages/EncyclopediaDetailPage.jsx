@@ -21,7 +21,7 @@ export default function EncyclopediaDetailPage({ id }) {
         <main className="magazine-page">
           <div className="magazine-container" style={{ textAlign: 'center', paddingTop: '4rem' }}>
             <h2>Penyakit tidak ditemukan</h2>
-            <a href="#/encyclopedia" className="btn-primary" style={{ marginTop: "1rem", display: "inline-block" }}>Kembali ke Encyclopedia</a>
+            <a href="#/encyclopedia" className="btn-primary" style={{ marginTop: "1rem", display: "inline-block" }}>Kembali ke Ensiklopedia</a>
           </div>
         </main>
         <Footer />

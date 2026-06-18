@@ -25,9 +25,9 @@ export default function ContactPage() {
           {/* Left Column */}
           <div className="contact-clean-left">
             <div className="title-group">
-              <h1 className="contact-clean-title">Contact us</h1>
+              <h1 className="contact-clean-title">Hubungi kami</h1>
               <p className="contact-clean-subtitle">
-                Get in touch with us for any enquiries and questions.
+                Hubungi kami untuk setiap pertanyaan dan keperluan informasi.
               </p>
             </div>
             
@@ -43,27 +43,27 @@ export default function ContactPage() {
             <div className="contact-clean-grid">
               {/* General Inquiries */}
               <div className="contact-clean-block clickable" onClick={() => handleCopy("rezkydesyafa@gmail.com", "email")}>
-                <span className="block-label">general inquiries</span>
+                <span className="block-label">pertanyaan umum</span>
                 <span className="block-value email-value">rezkydesyafa@gmail.com</span>
-                {copiedText === "email" && <span className="copy-feedback">copied!</span>}
+                {copiedText === "email" && <span className="copy-feedback">disalin!</span>}
               </div>
 
               {/* Collaborations */}
               <a href="https://github.com/Rezkydesyafa" target="_blank" rel="noopener noreferrer" className="contact-clean-block link-block">
-                <span className="block-label">collaborations</span>
+                <span className="block-label">kolaborasi</span>
                 <span className="block-value">github.com/Rezkydesyafa</span>
               </a>
 
               {/* Careers */}
               <div className="contact-clean-block clickable" onClick={() => handleCopy("rezkydesyafa@gmail.com", "careers")}>
-                <span className="block-label">careers</span>
+                <span className="block-label">karir</span>
                 <span className="block-value email-value">rezkydesyafa@gmail.com</span>
-                {copiedText === "careers" && <span className="copy-feedback">copied!</span>}
+                {copiedText === "careers" && <span className="copy-feedback">disalin!</span>}
               </div>
 
               {/* Address */}
               <div className="contact-clean-block">
-                <span className="block-label">address</span>
+                <span className="block-label">alamat</span>
                 <span className="block-value address-value">
                   Yogyakarta, Indonesia<br />
                   Pusat Penelitian Citra Digital Padi

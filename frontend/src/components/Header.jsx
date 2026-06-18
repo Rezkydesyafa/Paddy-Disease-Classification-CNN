@@ -29,10 +29,10 @@ export default function Header() {
           Padi AI
         </a>
         <div className="nav-links">
-          <a href="#/" className={currentHash === "#/" ? "active" : ""}>Home</a>
+          <a href="#/" className={currentHash === "#/" ? "active" : ""}>Beranda</a>
           <a href="#/diagnosis" className={currentHash === "#/diagnosis" ? "active" : ""}>Diagnosis</a>
-          <a href="#/encyclopedia" className={currentHash.startsWith("#/encyclopedia") ? "active" : ""}>Encyclopedia</a>
-          <a href="#/contact" className={currentHash === "#/contact" ? "active" : ""}>Contact</a>
+          <a href="#/encyclopedia" className={currentHash.startsWith("#/encyclopedia") ? "active" : ""}>Ensiklopedia</a>
+          <a href="#/contact" className={currentHash === "#/contact" ? "active" : ""}>Kontak</a>
         </div>
         <div className="nav-icons">
           <div className="icon-circle">
