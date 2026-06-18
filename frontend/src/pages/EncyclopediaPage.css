@@ -63,7 +63,7 @@
 }
 
 .ep-hero-title span.highlight {
-  color: var(--primary-green);
+  color: #c8dfbb;
   position: relative;
   display: inline-block;
 }
@@ -75,7 +75,7 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--primary-green);
+  background-color: #c8dfbb;
   border-radius: 2px;
 }
 
